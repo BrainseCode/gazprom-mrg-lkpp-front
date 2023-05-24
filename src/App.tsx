@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
+import AppLayout from './Layouts/AppLayout';
+import HomePage from './Pages/Home/Index';
+import UserProfile from './Pages/UserProfile/Index';
+import Contracts from './Pages/Contracts/Index';
+import Settings from './Pages/Settings/Index';
+import CalculationStatus from './Pages/CalculationStatus/Index';
+import CalorieArchive from './Pages/CalorieArchive/Index';
+import UserApplications from './Pages/UserApplications/Index';
+import TechnicalSupport from './Pages/TechnicalSupport/Index';
+import MeasuringComplex from './Pages/MeasuringComplex/Index';
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={ <AppLayout /> }>
+            <Route index element={ <HomePage /> } />
+            <Route path="userprofile" element={ <UserProfile /> } />
+            <Route path="contracts" element={ <Contracts /> } />
+            <Route path="settings" element={ <Settings /> } />
+            <Route path="calculationStatus" element={ <CalculationStatus /> } />
+            <Route path="calorieArchive" element={ <CalorieArchive /> } />
+            <Route path="userApplications" element={ <UserApplications /> } />
+            <Route path="technicalSupport" element={ <TechnicalSupport /> } />
+            <Route path="measuringComplex" element={ <MeasuringComplex /> } />
+        </Route>
+      </Routes>
     </div>
   );
 }
-
-export default App;

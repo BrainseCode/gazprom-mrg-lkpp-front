@@ -1,0 +1,38 @@
+.profile__box {
+    box-shadow: 0.1em 0.1em 1px rgba(122,122,122,0.5);
+    background: white;
+    border-radius: 5px;
+}
+.profile__header {
+    border-radius: 5px 5px 0px 0px; margin-top: 15px;
+    color: white; background-color: #21A0ED;
+    min-height: 25px; display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.profile__items {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.profile__save-button {
+    display: flex;
+    justify-content: center;
+}
+.profile__save-button_a {
+    color: white;
+    background-color: #21A0ED;
+    margin-top: 10px;
+}
+.home__actions {
+    display: flex;
+    justify-content: right;
+    margin-top: 15px;
+}
+.home__actions_item {
+    display: flex;
+    justify-content: right;
+}
+.home__actions_item_a {
+    color: white;
+    background-color: #21A0ED;
+}
