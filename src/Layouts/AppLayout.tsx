@@ -13,8 +13,8 @@ import {
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
 import classNames from "classnames"
-import logo from "@/img/logo.png"
-import settingsProfile from "@/img/settingsProfile.png"
+import logo from "../assets/images/logo.png"
+import settingsProfile from "../assets/images/settingsProfile.png"
 import {Link, Outlet} from "react-router-dom";
 
 const username = 'ООО "Пропеллер"';
@@ -22,7 +22,7 @@ const username = 'ООО "Пропеллер"';
 const roleUser: number = 3; //1 администратор 2 менеджер 3 пользователи
 
 let navigation = [
-  { id: 1, name: 'Главная', href: '/home', icon: HomeIcon, current: true },
+  { id: 1, name: 'Главная', href: '/', icon: HomeIcon, current: true },
   { id: 2, name: 'Профиль', href: '/userprofile', icon: UsersIcon, current: false },
   { id: 3, name: 'Договоры', href: '/contracts', icon: FolderIcon, current: false },
   { id: 4, name: 'Состояние расчетов', href: '/calculationStatus', icon: CalendarIcon, current: false },

@@ -1,21 +1,12 @@
 import React, { useState } from 'react';
 import './searchCalorieArchive.css';
 import ReactApexChart from "react-apexcharts";
+import { ApexOptions } from "apexcharts";
 
+export default function SearchCalorieArchive() {
+  // const [chart, setChart] = useState(test1);
 
-
-const test1 = {
-  series: [
-    {
-      name: 'series1',
-      data: [31, 40, 28, 51, 42, 109, 100],
-    },
-    {
-      name: 'series2',
-      data: [11, 32, 45, 32, 34, 52, 41],
-    },
-  ],
-  options: {
+  const options: ApexOptions = {
     chart: {
       height: 350,
       type: 'area',
@@ -43,11 +34,18 @@ const test1 = {
         format: 'dd/MM/yy HH:mm',
       },
     },
-  },
-};
+  }
 
-export default function SearchCalorieArchive() {
-  const [chart, setChart] = useState(test1);
+  const series = [
+    {
+      name: 'series1',
+      data: [31, 40, 28, 51, 42, 109, 100],
+    },
+    {
+      name: 'series2',
+      data: [11, 32, 45, 32, 34, 52, 41],
+    },
+  ]
 
   const date = new Date();
   const futureDate = date.getDate() - 1;
@@ -127,10 +125,10 @@ export default function SearchCalorieArchive() {
         <div className="mt-1 mb-5">
           <div id="chart">
             <ReactApexChart
-              // options={chart.options}
-              series={chart.series}
-              type="area"
-              height={350}
+                type="area"
+                options={options}
+                series={series}
+                height={350}
             />
           </div>
         </div>

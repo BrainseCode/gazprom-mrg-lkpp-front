@@ -3,9 +3,9 @@ import './measuringComplex.css';
 
 export default function MeasuringComplex() {
   let complexes = [
-    {id: 1, adres:"Улица Ленина 43", device:"8232",  contract: "№746647", volume: "565.00", plan: "565.00"},
-    {id: 2, adres:"Улица Пушкина 43", device:"8020",  contract: "№746647", volume: "565.00", plan: "565.00"},
-    {id: 3, adres:"Улица Достоевского 43", device:"7200",  contract: "№746647", volume: "565.00", plan: "565.00"}
+    {id: 1, address:"Улица Ленина 43", device:"8232",  contract: "№746647", volume: "565.00", plan: "565.00"},
+    {id: 2, address:"Улица Пушкина 43", device:"8020",  contract: "№746647", volume: "565.00", plan: "565.00"},
+    {id: 3, address:"Улица Достоевского 43", device:"7200",  contract: "№746647", volume: "565.00", plan: "565.00"}
   ];
   return (
     <div className='flex flex-col w-full bg-white rounded gazprom-shadow'>
@@ -50,7 +50,7 @@ export default function MeasuringComplex() {
               <tbody className="bg-white divide-y divide-gray-200">
                 {complexes.map((complexe) => (
                   <tr key={complexe.id}>
-                    <td className="px-6 pt-4 pb-4 text-left whitespace-nowrap text-sm font-medium text-gray-900">{complexe.adres}</td>
+                    <td className="px-6 pt-4 pb-4 text-left whitespace-nowrap text-sm font-medium text-gray-900">{complexe.address}</td>
                     <td className="px-6 pt-4 pb-4 text-center whitespace-nowrap text-sm text-gray-500">{complexe.device}</td>
                     <td className="px-6 pt-4 pb-4 text-center whitespace-nowrap text-sm text-gray-500">{complexe.contract}</td>
                     <td className="px-6 pt-4 pb-4 text-center whitespace-nowrap text-sm text-gray-500">{complexe.volume}</td>

@@ -1,23 +1,14 @@
 import  { useState } from 'react';
 import './value.css';
 import ReactApexChart from 'react-apexcharts';
+import { ApexOptions } from "apexcharts";
 
+export default function Value() {
 
-const test1 = {
-  series: [
-    {
-      name: 'series1',
-      data: [31, 40, 28, 51, 42, 109, 100],
-    },
-    {
-      name: 'series2',
-      data: [11, 32, 45, 32, 34, 52, 41],
-    },
-  ],
-  options: {
+  const options: ApexOptions = {
     chart: {
       height: 350,
-      type: 'area',
+          type: 'area',
     },
     dataLabels: {
       enabled: false,
@@ -27,7 +18,7 @@ const test1 = {
     },
     xaxis: {
       type: 'datetime',
-      categories: [
+          categories: [
         '2018-09-19T00:00:00.000Z',
         '2018-09-19T01:30:00.000Z',
         '2018-09-19T02:30:00.000Z',
@@ -42,10 +33,18 @@ const test1 = {
         format: 'dd/MM/yy HH:mm',
       },
     },
-  },
-};
+  }
 
-export default function Value() {
+  const series = [
+    {
+      name: 'series1',
+      data: [31, 40, 28, 51, 42, 109, 100],
+    },
+    {
+      name: 'series2',
+      data: [11, 32, 45, 32, 34, 52, 41],
+    },
+  ]
 
   let complexes = [
     {id: 1, date:"22.06.23", source:"ЛК",  volume: "746 647", plan: "565 323", status: "Активно"},
@@ -55,9 +54,6 @@ export default function Value() {
     {id: 5, date:"22.06.23", source:"ЛК",  volume: "746 647", plan: "565 323", status: "Активно"},
     {id: 6, date:"22.06.23", source:"ЛК",  volume: "746 647", plan: "565 323", status: "Активно"}
   ];
-  
-
-  const [chart, setChart] = useState(test1);
 
   const date = new Date();
   const futureDate = date.getDate() - 1;
@@ -200,8 +196,8 @@ export default function Value() {
         <div className="mt-1 mb-5">
           <div id="chart">
             <ReactApexChart
-              // options={chart.options}
-              series={chart.series}
+              options={options}
+              series={series}
               type="area"
               height={350}
             />
