@@ -168,7 +168,7 @@ export default function Example() {
                 roleUser < 3 && 
                   <div className='flex'>
                   <span className='ml-1'>Пользователь</span>
-                  <div className='ml-1'><input className='w-28' type="text" value={userId}/></div>
+                  <input className='ml-1 w-28 p-0' type="text" value={userId}/>
                 </div>
               
               }

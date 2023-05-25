@@ -5,10 +5,10 @@ import './petition.css';
 export default function UpdateApplications() {
 
   const tabs = [
-    { name: 'My Account', href: '#', current: false },
-    { name: 'Company', href: '#', current: false },
-    { name: 'Team Members', href: '#', current: true },
-    { name: 'Billing', href: '#', current: false },
+    { name: 'О заключении договора ТП', href: '#', current: true },
+    { name: 'Изменение годового объема', href: '#', current: false },
+    { name: 'Вызов метролога', href: '#', current: false },
+    { name: 'Прочее', href: '#', current: false },
   ];
 
   function classNames(...classes) {
@@ -30,7 +30,7 @@ export default function UpdateApplications() {
                 id="tabs"
                 name="tabs"
                 className="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
-                defaultValue={tabs.find((tab) => tab.current).name}
+                defaultValue={tabs[0].name}
               >
                 {tabs.map((tab) => (
                   <option key={tab.name}>{tab.name}</option> 
