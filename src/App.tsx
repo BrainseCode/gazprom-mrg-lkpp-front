@@ -12,6 +12,9 @@ import CalorieArchive from './Pages/CalorieArchive/Index';
 import UserApplications from './Pages/UserApplications/Index';
 import TechnicalSupport from './Pages/TechnicalSupport/Index';
 import MeasuringComplex from './Pages/MeasuringComplex/Index';
+import ManagementUser from './Pages/ManagementUser/Index';
+import Petition from './Pages/Petition/Index';
+import Auth from './Pages/Auth/Index';
 
 export default function App() {
   return (
@@ -27,6 +30,9 @@ export default function App() {
             <Route path="userApplications" element={ <UserApplications /> } />
             <Route path="technicalSupport" element={ <TechnicalSupport /> } />
             <Route path="measuringComplex" element={ <MeasuringComplex /> } />
+            <Route path="managementUser" element={ <ManagementUser /> } />
+            <Route path="auth" element={ <Auth /> } />
+            <Route path="petition" element={ <Petition /> } />
         </Route>
       </Routes>
     </div>
