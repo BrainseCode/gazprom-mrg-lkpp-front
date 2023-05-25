@@ -15,7 +15,7 @@ import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import classNames from "classnames"
 import logo from "../assets/images/logo.png"
 import settingsProfile from "../assets/images/settingsProfile.png"
-import {Link, Outlet} from "react-router-dom";
+import {Link, NavLink, Outlet} from "react-router-dom";
 
 const username = 'ООО "Пропеллер"';
 
@@ -117,12 +117,12 @@ export default function Example() {
                 <div className="mt-5 h-0 flex-1 overflow-y-auto">
                   <nav className="space-y-1 px-2">
                     {navigation.map((item) => (
-                      <Link
+                      <NavLink
                         key={item.name}
                         to={item.href}
                         className={classNames(
                           item.current
-                            ? 'bg-gray-100 text-gray-900'
+                            ? 'text-gray-900'
                             : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
                           'group flex items-center px-2 py-2 text-base font-medium rounded-md'
                         )}
@@ -135,7 +135,7 @@ export default function Example() {
                           aria-hidden="true"
                         />
                         {item.name}
-                      </Link>
+                      </NavLink>
                     ))}
                   </nav>
                 </div>
@@ -173,11 +173,11 @@ export default function Example() {
               
               }
               {navigation.map((item) => (
-                <Link
+                <NavLink
                   key={item.name}
                   to={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-100 text-gray-900' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
+                    item.current ? 'text-gray-900' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
                     'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
                   )}
                 >
@@ -189,7 +189,7 @@ export default function Example() {
                     aria-hidden="true"
                   />
                   {item.name}
-                </Link>
+                </NavLink>
               ))}
             </nav>
           </div>
