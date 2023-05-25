@@ -8,6 +8,7 @@ export default function UpdateApplications() {
     { name: 'О заключении договора ТП', href: '#', current: true },
     { name: 'Изменение годового объема', href: '#', current: false },
     { name: 'Вызов метролога', href: '#', current: false },
+    { name: 'Изменение данных л/с', href: '#', current: false },
     { name: 'Прочее', href: '#', current: false },
   ];
 

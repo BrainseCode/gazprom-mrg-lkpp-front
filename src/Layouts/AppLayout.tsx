@@ -19,7 +19,7 @@ import {Link, Outlet} from "react-router-dom";
 
 const username = 'ООО "Пропеллер"';
 
-const roleUser: number = 1; //1 администратор 2 менеджер 3 пользователи
+const roleUser: number = 2; //1 администратор 2 менеджер 3 пользователи
 const userId = 324324;
 
 let navigation = [
@@ -44,7 +44,7 @@ if(roleUser===1) {
 else if(roleUser===2) {
   navigation = [
     { id: 1, name: 'Обработка заявок', href: '/petition', icon: HomeIcon, current: true },
-    { id: 2, name: 'Техническая поддержка', href: '/', icon: HomeIcon, current: true },
+    { id: 2, name: 'Техническая поддержка', href: '/technicalSupport', icon: HomeIcon, current: true },
     ...navigation
   ];
 }
