@@ -7,7 +7,7 @@ export default function UserTableProfile() {
         <div className='w-full flex justify-center rounded-t-lg gazprom-head'>Профиль</div>
         <div className='ml-4 mr-4'>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Наименование контрагента
             </label>
             <div className="mt-1">
@@ -21,7 +21,7 @@ export default function UserTableProfile() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Полное название
             </label>
             <div className="mt-1">
@@ -35,7 +35,7 @@ export default function UserTableProfile() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Ответственно лицо
             </label>
             <div className="mt-1">
@@ -49,7 +49,7 @@ export default function UserTableProfile() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Общий телефон
             </label>
             <div className="mt-1">
@@ -63,7 +63,7 @@ export default function UserTableProfile() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Телефон ответственного
             </label>
             <div className="mt-1">
@@ -77,7 +77,7 @@ export default function UserTableProfile() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Эл почта
             </label>
             <div className="mt-1">
@@ -91,7 +91,7 @@ export default function UserTableProfile() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Юр. адрес
             </label>
             <div className="mt-1">
@@ -105,7 +105,7 @@ export default function UserTableProfile() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Физ. адрес
             </label>
             <div className="mt-1">
@@ -118,7 +118,9 @@ export default function UserTableProfile() {
               />
             </div>
           </div>
-          <button className="btn btn-blue mt-2 mb-2 gazprom-button mt-148">Подать заявку на редактирование</button>
+          <div className='flex'>
+            <button className="btn btn-blue mt-2 mb-2 gazprom-button mt-148">Подать заявку на редактирование</button>
+          </div>
         </div>
     </div>
   );

@@ -7,7 +7,7 @@ export default function LegalInfo() {
         <div className='w-full flex justify-center rounded-t-lg gazprom-head'>Юридическая информация</div>
         <div className='ml-4 mr-4'>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               ИНН
             </label>
             <div className="mt-1">
@@ -21,7 +21,7 @@ export default function LegalInfo() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               КПП
             </label>
             <div className="mt-1">
@@ -35,7 +35,7 @@ export default function LegalInfo() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               ОГРН
             </label>
             <div className="mt-1">
@@ -49,7 +49,7 @@ export default function LegalInfo() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               ОКПО
             </label>
             <div className="mt-1">
@@ -63,7 +63,7 @@ export default function LegalInfo() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               ОКФС
             </label>
             <div className="mt-1">
@@ -77,7 +77,7 @@ export default function LegalInfo() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               ОКАТО
             </label>
             <div className="mt-1">
@@ -91,7 +91,7 @@ export default function LegalInfo() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               ОКОПФ
             </label>
             <div className="mt-1">
@@ -105,7 +105,7 @@ export default function LegalInfo() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               ОКТМО
             </label>
             <div className="mt-1">
@@ -119,7 +119,7 @@ export default function LegalInfo() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               ОКВЭД
             </label>
             <div className="mt-1">
@@ -133,7 +133,7 @@ export default function LegalInfo() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               ОКОГУ
             </label>
             <div className="mt-1">
@@ -146,7 +146,9 @@ export default function LegalInfo() {
               />
             </div>
           </div>
-          <button className="btn btn-blue mb-2 gazprom-button mt-4">Подать заявку на редактирование</button>
+          <div className='flex'>
+            <button className="btn btn-blue mb-2 gazprom-button mt-4">Подать заявку на редактирование</button>
+          </div>
         </div>
     </div>
   );

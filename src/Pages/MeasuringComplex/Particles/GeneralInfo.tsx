@@ -43,7 +43,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Наименование
                 </label>
@@ -60,7 +60,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left  text-sm font-medium text-gray-700"
                 >
                   Номер
                 </label>
@@ -77,7 +77,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Типоразмер
                 </label>
@@ -94,7 +94,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2 pb-4">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Дата поверки
                 </label>
@@ -115,7 +115,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Наименование
                 </label>
@@ -132,7 +132,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Номер
                 </label>
@@ -149,7 +149,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Типоразмер
                 </label>
@@ -166,7 +166,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2 pb-4">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Дата поверки
                 </label>
@@ -187,7 +187,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Наименование
                 </label>
@@ -204,7 +204,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Номер
                 </label>
@@ -221,7 +221,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Типоразмер
                 </label>
@@ -238,7 +238,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2 pb-4">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Дата поверки
                 </label>
@@ -259,7 +259,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Наименование
                 </label>
@@ -276,7 +276,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Номер
                 </label>
@@ -293,7 +293,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Типоразмер
                 </label>
@@ -310,7 +310,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2 pb-4">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Дата поверки
                 </label>
@@ -331,7 +331,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Наименование
                 </label>
@@ -348,7 +348,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Номер
                 </label>
@@ -365,7 +365,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Типоразмер
                 </label>
@@ -382,7 +382,7 @@ export default function GeneralInfo() {
               <div className="flex flex-col justify-between mt-1 pl-2 pr-2 pb-4">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-left text-sm font-medium text-gray-700"
                 >
                   Дата поверки
                 </label>

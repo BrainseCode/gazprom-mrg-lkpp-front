@@ -9,19 +9,19 @@ export default function CreateApp() {
         Создание заявок
       </div>
         <div className="mt-1 mb-1 ml-4">
-          <div className="mb-2">
+          <div className="flex mb-2">
             <button className="btn btn-blue">Создать</button>
             <span className="ml-2">Заявка о заключении договора ТП</span>
           </div>
-          <div className="mb-2">
+          <div className="flex mb-2">
             <button className="btn btn-blue">Создать</button>
             <span className="ml-2">Заявка на изменение годового объема</span>
           </div>
-          <div className="mb-2">
+          <div className="flex mb-2">
             <button className="btn btn-blue">Создать</button>
             <span className="ml-2">Заявка на вызов метролога</span>
           </div>
-          <div className="mb-2">
+          <div className="flex mb-2">
             <button className="btn btn-blue">Создать</button>
             <span className="ml-2">Другая тема</span>
           </div>
