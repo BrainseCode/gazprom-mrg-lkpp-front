@@ -33,7 +33,7 @@ export default function UpdateApplications() {
                 defaultValue={tabs.find((tab) => tab.current).name}
               >
                 {tabs.map((tab) => (
-                  <option key={tab.name}>{tab.name}</option>
+                  <option key={tab.name}>{tab.name}</option> 
                 ))}
               </select>
             </div>
