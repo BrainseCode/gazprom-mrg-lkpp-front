@@ -19,7 +19,8 @@ import {Link, Outlet} from "react-router-dom";
 
 const username = 'ООО "Пропеллер"';
 
-const roleUser: number = 3; //1 администратор 2 менеджер 3 пользователи
+const roleUser: number = 2; //1 администратор 2 менеджер 3 пользователи
+const userId = 324324;
 
 let navigation = [
   { id: 1, name: 'Главная', href: '/', icon: HomeIcon, current: true },
@@ -35,15 +36,15 @@ let navigation = [
 
 if(roleUser===1) {
   navigation = [
-    { id: 1, name: 'Обработка заявок', href: '/home', icon: HomeIcon, current: true },
-    { id: 2, name: 'Управление учетными записями', href: '/home', icon: HomeIcon, current: true },
+    { id: 1, name: 'Обработка заявок', href: '/petition', icon: HomeIcon, current: true },
+    { id: 2, name: 'Управление аккаунтами', href: '/managementUser', icon: HomeIcon, current: true },
     ...navigation
   ];
 }
 else if(roleUser===2) {
   navigation = [
-    { id: 1, name: 'Обработка заявок', href: '/home', icon: HomeIcon, current: true },
-    { id: 2, name: 'Техническая поддержка', href: '/home', icon: HomeIcon, current: true },
+    { id: 1, name: 'Обработка заявок', href: '/petition', icon: HomeIcon, current: true },
+    { id: 2, name: 'Техническая поддержка', href: '/technicalSupport', icon: HomeIcon, current: true },
     ...navigation
   ];
 }
@@ -105,7 +106,7 @@ export default function Example() {
                   </div>
                 </Transition.Child>
                 <div className="flex flex-shrink-0 items-center px-4">
-                  <Link to="/home">
+                  <Link to="/">
                   <img
                     className="h-8 w-auto"
                     src={logo}
@@ -152,7 +153,7 @@ export default function Example() {
         {/* Sidebar component, swap this element with another sidebar if you like */}
         <div className="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-white pt-5">
           <div className="flex flex-shrink-0 items-center px-4">
-            <Link to="/home" className='flex items-center'>
+            <Link to="/" className='flex items-center'>
             <img
               className="h-8 w-auto"
               src={logo}
@@ -163,10 +164,14 @@ export default function Example() {
           </div>
           <div className="mt-5 flex flex-grow flex-col">
             <nav className="flex-1 space-y-1 px-2 pb-4">
-              <div>
-                <div>Пользователь</div>
-                <div><input type="text" /></div>
-              </div>
+              {
+                roleUser < 3 && 
+                  <div className='flex'>
+                  <span className='ml-1'>Пользователь</span>
+                  <input className='ml-1 w-28 p-0' type="text" value={userId}/>
+                </div>
+              
+              }
               {navigation.map((item) => (
                 <Link
                   key={item.name}

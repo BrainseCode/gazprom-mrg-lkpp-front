@@ -8,7 +8,7 @@ export default function TableProfile() {
         <div className='w-full flex justify-center rounded-t-lg gazprom-head'>Профиль</div>
         <div className='ml-4 mr-4'>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-sm text-left font-medium text-gray-700">
               Наименование контрагента
             </label>
             <div className="mt-1">
@@ -22,7 +22,7 @@ export default function TableProfile() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-sm text-left font-medium text-gray-700">
               Контактное лицо
             </label>
             <div className="mt-1">
@@ -36,7 +36,7 @@ export default function TableProfile() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-sm text-left font-medium text-gray-700">
               Телефон
             </label>
             <div className="mt-1">
@@ -50,7 +50,7 @@ export default function TableProfile() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Эл. почта
             </label>
             <div className="mt-1">
@@ -63,9 +63,11 @@ export default function TableProfile() {
               />
             </div>
           </div>
-          <Link to="/UserProfile/Index">
-          <button className="btn btn-blue mt-2 mb-2 gazprom-button">Переход в профиль</button>
-          </Link>
+          <div className='flex'>
+            <Link to="/userProfile">
+                <button className="btn btn-blue mt-2 mb-2 text-left gazprom-button">Переход в профиль</button>
+            </Link>
+          </div>
         </div>
     </div>
   );

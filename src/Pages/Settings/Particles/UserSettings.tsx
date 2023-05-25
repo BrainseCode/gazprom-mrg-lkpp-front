@@ -7,7 +7,7 @@ export default function UserSettings() {
         <div className='w-full flex justify-center rounded-t-lg gazprom-head'>Настройки личного кабинета</div>
         <div className='ml-4 mr-4'>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Отображаемое имя
             </label>
             <div className="mt-1">
@@ -21,7 +21,7 @@ export default function UserSettings() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Пароль
             </label>
             <div className="mt-1">
@@ -35,7 +35,7 @@ export default function UserSettings() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Повторите пароль
             </label>
             <div className="mt-1">
@@ -48,7 +48,9 @@ export default function UserSettings() {
               />
             </div>
           </div>
-          <button className="btn btn-blue mt-2 mb-2 gazprom-button">Сохранить</button>
+          <div className='flex'>
+            <button className="btn btn-blue mt-2 mb-2 gazprom-button">Сохранить</button>
+          </div>
         </div>
     </div>
   );
