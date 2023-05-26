@@ -8,61 +8,66 @@ export default function UpdateApplications() {
     {
       name: 'Заявки о заключении договора ТП',
       features: [
-        {
-          name: 'Adaptive and modular',
-          description:
-            'The Organize base set allows you to configure and evolve your setup as your items and habits change. The included trays and optional add-ons are easily rearranged to achieve that perfect setup.',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg',
-          imageAlt: 'Maple organizer base with slots, supporting white polycarbonate trays of various sizes.',
-        },
+        {id: 1, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 2, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 3, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 4, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 5, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 6, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 7, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 8, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
       ],
     },
     {
       name: 'Заявки на изменение годового объема',
       features: [
-        {
-          name: 'Natural wood options',
-          description:
-            'Organize has options for rich walnut and bright maple base materials. Accent your desk with a contrasting material, or match similar woods for a calm and cohesive look. Every base is hand sanded and finished.',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-02.jpg',
-          imageAlt: 'Walnut organizer base with pen, sticky note, phone, and bin trays, next to modular drink coaster attachment.',
-        },
+        {id: 1, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 2, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 3, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 4, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 5, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 6, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 7, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 8, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
       ],
     },
     {
       name: 'Заявки на вызов метролога',
       features: [
-        {
-          name: 'Helpful around the home',
-          description:
-            "Our customers use Organize throughout the house to bring efficiency to many daily routines. Enjoy Organize in your workspace, kitchen, living room, entry way, garage, and more. We can't wait to see how you'll use it!",
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-03.jpg',
-          imageAlt: 'Walnut organizer base with white polycarbonate trays in the kitchen with various kitchen utensils.',
-        },
+        {id: 1, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 2, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 3, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 4, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 5, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 6, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 7, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 8, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
       ],
     },
     {
       name: 'Заявки на изменение данных',
       features: [
-        {
-          name: "Everything you'll need",
-          description:
-            'The Organize base set includes the pen, phone, small, and large trays to help you group all your essential items. Expand your set with the drink coaster and headphone stand add-ons.',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-04.jpg',
-          imageAlt: 'Walnut organizer system on black leather desk mat on top of white desk.',
-        },
+        {id: 1, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 2, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 3, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 4, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 5, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 6, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 7, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 8, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
       ],
     },
     {
       name: 'Прочие заявки',
       features: [
-        {
-          name: "Everything you'll need",
-          description:
-            'The Organize base set includes the pen, phone, small, and large trays to help you group all your essential items. Expand your set with the drink coaster and headphone stand add-ons.',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-04.jpg',
-          imageAlt: 'Walnut organizer system on black leather desk mat on top of white desk.',
-        },
+        {id: 1, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 2, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 3, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 4, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 5, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 6, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 7, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 8, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
       ],
     },
   ];
@@ -102,20 +107,58 @@ export default function UpdateApplications() {
                 </div>
                 <Tab.Panels as={Fragment}>
                   {tabs.map((tab) => (
-                    <Tab.Panel key={tab.name} className="space-y-16 pt-10 lg:pt-16">
-                      {tab.features.map((feature) => (
-                        <div key={feature.name} className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
-                          <div className="mt-6 lg:col-span-5 lg:mt-0">
-                            <h3 className="text-lg font-medium text-gray-900">{feature.name}</h3>
-                            <p className="mt-2 text-sm text-gray-500">{feature.description}</p>
-                          </div>
-                          <div className="lg:col-span-7">
-                            <div className="aspect-w-2 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 sm:aspect-w-5 sm:aspect-h-2">
-                              <img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
-                            </div>
-                          </div>
-                        </div>
-                      ))}
+                    <Tab.Panel key={tab.name} className="space-y-16 pt-6">
+                          <div className="scroll-table">
+                          <table className="min-w-full divide-y divide-gray-200">
+                              <thead>
+                                <tr>
+                                  <th
+                                    scope="col"
+                                    className="px-6 py-1 text-left text-xg font-bold"
+                                  >
+                                    Документ
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    className="px-6 py-1 text-center text-xg font-bold"
+                                  >
+                                    Дата создания
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    className="px-6 py-1 text-center text-xg font-bold"
+                                  >
+                                    Пользователь
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    className="px-6 py-1 text-center text-xg font-bold"
+                                  >
+                                    Статус
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    className="px-6 py-1 text-right text-xg font-bold"
+                                  >
+                                    Действия
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody className="bg-white divide-y divide-gray-200">
+                                {tab.features.map((feature) => (
+                                  <tr key={feature.id}>
+                                    <td className="px-6 text-left whitespace-nowrap text-sm font-medium text-gray-900">{feature.document}</td>
+                                    <td className="px-6 text-center whitespace-nowrap text-sm text-gray-500">{feature.dateCreate}</td>
+                                    <td className="px-6 text-center whitespace-nowrap text-sm text-gray-500">{feature.user}</td>
+                                    <td className="px-6 text-center whitespace-nowrap text-sm text-gray-500">{feature.status}</td>
+                                    <td className="px-6 text-right whitespace-nowrap text-sm font-medium">
+                                      <button className="btn btn-blue mt-2 mb-2 gazprom-button">Обработать</button>
+                                    </td>
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div> 
                     </Tab.Panel>
                   ))}
                 </Tab.Panels>
