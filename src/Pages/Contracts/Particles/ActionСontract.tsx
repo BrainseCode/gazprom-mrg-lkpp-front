@@ -9,7 +9,7 @@ export default function ActionOntract() {
         <div className='w-full flex justify-center rounded-t-lg gazprom-head'>Действия по договору</div>
         <div className='ml-4 mr-4'>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Дата регистрации
             </label>
             <div className="mt-1">
@@ -23,7 +23,7 @@ export default function ActionOntract() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Дата начала договора
             </label>
             <div className="mt-1">
@@ -37,7 +37,7 @@ export default function ActionOntract() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Дата завершения
             </label>
             <div className="mt-1">
@@ -51,7 +51,7 @@ export default function ActionOntract() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
              Скан
             </label>
             <div className="mt-1">

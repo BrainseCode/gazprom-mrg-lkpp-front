@@ -8,7 +8,7 @@ function InformationOntract() {
         <div className='w-full flex justify-center rounded-t-lg gazprom-head'>Информация по договору</div>
         <div className='ml-4 mr-4'>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Номер
             </label>
             <div className="mt-1">
@@ -22,7 +22,7 @@ function InformationOntract() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Наименование
             </label>
             <div className="mt-1">
@@ -36,7 +36,7 @@ function InformationOntract() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Вид
             </label>
             <div className="mt-1">
@@ -50,7 +50,7 @@ function InformationOntract() {
             </div>
           </div>
           <div className='flex flex-col justify-between mt-1'>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">
               Отчетный час
             </label>
             <div className="mt-1">

@@ -1,63 +1,172 @@
 import React from 'react';
 import './petition.css';
-
+import { Fragment } from 'react';
+import { Tab } from '@headlessui/react';
 
 export default function UpdateApplications() {
-
   const tabs = [
-    { name: 'О заключении договора ТП', href: '#', current: true },
-    { name: 'Изменение годового объема', href: '#', current: false },
-    { name: 'Вызов метролога', href: '#', current: false },
-    { name: 'Изменение данных л/с', href: '#', current: false },
-    { name: 'Прочее', href: '#', current: false },
+    {
+      name: 'Заявки о заключении договора ТП',
+      features: [
+        {id: 1, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 2, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 3, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 4, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 5, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 6, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 7, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 8, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+      ],
+    },
+    {
+      name: 'Заявки на изменение годового объема',
+      features: [
+        {id: 1, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 2, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 3, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 4, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 5, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 6, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 7, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+        {id: 8, document: "2312", dateCreate: "22.04.2023", user: "Пао Ростелеком", status: "Активна", action: ""},
+      ],
+    },
+    {
+      name: 'Заявки на вызов метролога',
+      features: [
+        {id: 1, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 2, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 3, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 4, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 5, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 6, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 7, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+        {id: 8, document: "2312", dateCreate: "22.04.2023", user: "Пао МТС", status: "Активна", action: ""},
+      ],
+    },
+    {
+      name: 'Заявки на изменение данных',
+      features: [
+        {id: 1, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 2, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 3, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 4, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 5, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 6, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 7, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+        {id: 8, document: "2312", dateCreate: "22.04.2023", user: "Пао Сбер", status: "Активна", action: ""},
+      ],
+    },
+    {
+      name: 'Прочие заявки',
+      features: [
+        {id: 1, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 2, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 3, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 4, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 5, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 6, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 7, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+        {id: 8, document: "2312", dateCreate: "22.04.2023", user: "Пао Т Плюс", status: "Активна", action: ""},
+      ],
+    },
   ];
 
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
   }
-  
+
   return (
-    <div className='flex flex-col w-full bg-white rounded gazprom-shadow h-73'>
-        <div className='w-full flex justify-center rounded-t-lg gazprom-head'>Обработка заявок</div>
-        <div className='ml-4 mr-4'>
-          <div className='mt-1 mb-5'>
-          <div>
-            <div className="sm:hidden">
-              <label htmlFor="tabs" className="sr-only">
-                Select a tab
-              </label>
-              {/* Use an "onChange" listener to redirect the user to the selected tab URL. */}
-              <select
-                id="tabs"
-                name="tabs"
-                className="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
-                defaultValue={tabs[0].name}
-              >
-                {tabs.map((tab) => (
-                  <option key={tab.name}>{tab.name}</option> 
-                ))}
-              </select>
-            </div>
-            <div className="hidden sm:block">
-              <nav className="flex space-x-4" aria-label="Tabs">
-                {tabs.map((tab) => (
-                  <a
-                    key={tab.name}
-                    href={tab.href}
-                    className={classNames(
-                      tab.current ? 'bg-gray-100 text-gray-700' : 'text-gray-500 hover:text-gray-700',
-                      'px-3 py-2 font-medium text-sm rounded-md'
-                    )}
-                    aria-current={tab.current ? 'page' : undefined}
-                  >
-                    {tab.name}
-                  </a>
-                ))}
-              </nav>
-            </div>
-          </div>
+    <div className="flex flex-col w-full bg-white rounded gazprom-shadow h-73">
+      <div className="w-full flex justify-center rounded-t-lg gazprom-head">Обработка заявок</div>
+      <div className="ml-4 mr-4">
+        <div className="mt-1 mb-5">
+          <div className="bg-white">
+            <section aria-labelledby="features-heading">
+              <Tab.Group as="div" className="mt-4">
+                <div className="-mx-4 flex overflow-x-auto sm:mx-0">
+                  <div className="flex-auto border-b border-gray-200 px-4 sm:px-0">
+                    <Tab.List className="-mb-px flex space-x-10">
+                      {tabs.map((tab) => (
+                        <Tab
+                          key={tab.name}
+                          className={({ selected }) =>
+                            classNames(
+                              selected
+                                ? 'border-indigo-500 text-indigo-600'
+                                : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300',
+                              'whitespace-nowrap border-b-2 py-6 text-sm font-medium',
+                            )
+                          }
+                        >
+                          {tab.name}
+                        </Tab>
+                      ))}
+                    </Tab.List>
+                  </div>
+                </div>
+                <Tab.Panels as={Fragment}>
+                  {tabs.map((tab) => (
+                    <Tab.Panel key={tab.name} className="space-y-16 pt-6">
+                          <div className="scroll-table">
+                          <table className="min-w-full divide-y divide-gray-200">
+                              <thead>
+                                <tr>
+                                  <th
+                                    scope="col"
+                                    className="px-6 py-1 text-left text-xg font-bold"
+                                  >
+                                    Документ
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    className="px-6 py-1 text-center text-xg font-bold"
+                                  >
+                                    Дата создания
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    className="px-6 py-1 text-center text-xg font-bold"
+                                  >
+                                    Пользователь
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    className="px-6 py-1 text-center text-xg font-bold"
+                                  >
+                                    Статус
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    className="px-6 py-1 text-right text-xg font-bold"
+                                  >
+                                    Действия
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody className="bg-white divide-y divide-gray-200">
+                                {tab.features.map((feature) => (
+                                  <tr key={feature.id}>
+                                    <td className="px-6 text-left whitespace-nowrap text-sm font-medium text-gray-900">{feature.document}</td>
+                                    <td className="px-6 text-center whitespace-nowrap text-sm text-gray-500">{feature.dateCreate}</td>
+                                    <td className="px-6 text-center whitespace-nowrap text-sm text-gray-500">{feature.user}</td>
+                                    <td className="px-6 text-center whitespace-nowrap text-sm text-gray-500">{feature.status}</td>
+                                    <td className="px-6 text-right whitespace-nowrap text-sm font-medium">
+                                      <button className="btn btn-blue mt-2 mb-2 gazprom-button">Обработать</button>
+                                    </td>
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div> 
+                    </Tab.Panel>
+                  ))}
+                </Tab.Panels>
+              </Tab.Group>
+            </section>
           </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
