@@ -15,12 +15,14 @@ import MeasuringComplex from './Pages/MeasuringComplex/Index';
 import ManagementUser from './Pages/ManagementUser/Index';
 import Petition from './Pages/Petition/Index';
 import Login from './Pages/Auth/login/Index';
+import Login2 from './Pages/Auth/login2/Index';
 
 export default function App() {
   return (
     <div className="App">
       <Routes>
       <Route path="login" element={ <Login /> } />
+      <Route path="login2" element={ <Login2 /> } />
       {/* <Route path="logout" element={ <Logout /> } /> */}
         <Route path="/" element={ <AppLayout /> }>
             <Route index element={ <HomePage /> } />
