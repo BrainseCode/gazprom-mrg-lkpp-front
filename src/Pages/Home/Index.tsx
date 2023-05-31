@@ -3,7 +3,6 @@ import TableProfile from './Particles/TableProfile';
 import TableContracts from './Particles/TableContracts';
 import MeasuringComplexes from './Particles/MeasuringComplexes';
 import Appeals from './Particles/Appeals';
-import './home.css';
 
 export default function Index() {
     return (

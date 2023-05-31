@@ -1,8 +1,6 @@
 import React from 'react';
 import UserTableProfile from './Particles/UserTableProfile';
 import LegalInfo from './Particles/LegalInfo';
-import './userProfile.css';
-
 
 export default function Index() {
     return (

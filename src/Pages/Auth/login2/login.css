@@ -1,3 +1,8 @@
 .gazprom-baground {
     background: linear-gradient(20deg, #4613ca, #0079c1, #00dcff);
 }
+.error {
+    height: 25px;
+    max-height: 25px;
+    min-height: 25px;
+}
