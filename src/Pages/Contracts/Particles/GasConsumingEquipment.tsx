@@ -1,7 +1,7 @@
 import React from 'react';
 import './gasConsumingEquipment.css';
 import { Disclosure } from '@headlessui/react';
-import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
+import { ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 
 export default function GasConsumingEquipment() {
   let elem = [
@@ -182,21 +182,21 @@ export default function GasConsumingEquipment() {
                   <>
                     <dt>
                       <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900 gazprom-head ml-2 mr-2">
-                        <span className="text-base font-semibold leading-7 ml-2">
-                          {elem.text}
-                        </span>
                         <span className="ml-6 flex h-7 items-center mr-5">
                           {open ? (
-                            <PlusSmallIcon
+                            <ChevronDownIcon
                               className="h-6 w-6"
                               aria-hidden="true"
                             />
                           ) : (
-                            <MinusSmallIcon
+                            <ChevronRightIcon
                               className="h-6 w-6"
                               aria-hidden="true"
                             />
                           )}
+                        </span>
+                        <span className="text-base font-semibold leading-7 ml-2">
+                          {elem.text}
                         </span>
                       </Disclosure.Button>
                     </dt>
