@@ -181,8 +181,8 @@ export default function GasConsumingEquipment() {
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900 gazprom-head ml-2 mr-2">
-                        <span className="ml-6 flex h-7 items-center mr-5">
+                      <Disclosure.Button className="flex w-full items-start justify-left text-left text-gray-900 gazprom-head mr-2">
+                        <span className="ml-1 flex h-7 items-center">
                           {open ? (
                             <ChevronDownIcon
                               className="h-6 w-6"
@@ -195,7 +195,7 @@ export default function GasConsumingEquipment() {
                             />
                           )}
                         </span>
-                        <span className="text-base font-semibold leading-7 ml-2">
+                        <span className="text-base font-semibold leading-7 ml-1">
                           {elem.text}
                         </span>
                       </Disclosure.Button>
